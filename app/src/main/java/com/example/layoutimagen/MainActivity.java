@@ -216,6 +216,21 @@ public void porcentaje(View view){
     }
 
 
+    //TIMER
+    new CountDownTimer(30000, 1000)
+    {
+        public void onTick(Long millisUntilFinished)
+        {
+            t.setText("segundos Menos:"+millisUntilFinished/1000);
+        }
+        public void OnFinish()
+        {
+            btn1.setText("Listo");
+        }
+    }.start();
+
+
+
     }
     //public void Valor(View view){
     //b = (Text1) view;
@@ -248,4 +263,5 @@ public void porcentaje(View view){
     //   break;
     //}
     //}
+
 
