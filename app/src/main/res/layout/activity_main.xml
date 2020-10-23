@@ -264,6 +264,7 @@
             android:background="@color/Pad2"
             android:text="."
             android:textSize="40dp"
+
             android:textColor="@color/Numeros"
 
             android:id="@+id/btnDot">
