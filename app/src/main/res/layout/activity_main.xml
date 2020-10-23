@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,23 +19,25 @@
         android:background="@color/Fondo"
         android:layout_weight="2"
         android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3">
-        <TextView
-            android:id="@+id/Text1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:autoSizeTextType="uniform"
-            android:background="@color/Fondo"
-            android:gravity="right|bottom"
-            android:text="0"
-            android:textColor="@color/Numeros"></TextView>
+
+            <TextView
+                android:id="@+id/Text1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoSizeTextType="uniform"
+                android:background="@color/Fondo"
+                android:gravity="right|bottom"
+                android:text="0"
+                android:textColor="@color/Numeros" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -45,6 +47,7 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         >
+
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -53,8 +56,7 @@
             android:text="AC"
             android:textSize="40dp"
             android:textColor="@color/Numeros"
-            android:id="@+id/btnClear"
-            android:onClick="clear"></Button>
+            android:id="@+id/btnClear" />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -73,7 +75,6 @@
             android:text="%"
             android:textSize="40dp"
             android:textColor="@color/Numeros"
-            android:onClick="porcentaje"
             android:id="@+id/btnPorcent">
         </Button>
         <Button
@@ -85,7 +86,7 @@
             android:textSize="50dp"
             android:textColor="@color/Numeros"
             android:id="@+id/btnBetween"
-            android:onClick="dividir">
+            >
         </Button>
     </LinearLayout>
     <LinearLayout
@@ -94,6 +95,7 @@
         android:background="@color/Fondo"
         android:layout_weight="1"
         android:orientation="horizontal">
+
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -102,9 +104,7 @@
             android:text="7"
             android:textSize="40dp"
             android:textColor="@color/Numeros"
-            android:id="@+id/btn7"
-            android:onClick="concatenar"
-            ></Button>
+            android:id="@+id/btn7" />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -113,7 +113,6 @@
             android:text="8"
             android:textSize="40dp"
             android:textColor="@color/Numeros"
-            android:onClick="concatenar"
             android:id="@+id/btn8"
            >
         </Button>
@@ -126,7 +125,6 @@
             android:textSize="40dp"
             android:textColor="@color/Numeros"
             android:id="@+id/btn9"
-            android:onClick="concatenar"
          >
         </Button>
         <Button
@@ -137,8 +135,7 @@
             android:text="x"
             android:textSize="40dp"
             android:textColor="@color/Numeros"
-            android:id="@+id/btnFor"
-            android:onClick="multiplicar">
+            android:id="@+id/btnFor">
         </Button>
     </LinearLayout>
     <LinearLayout
@@ -156,7 +153,6 @@
             android:textSize="40dp"
             android:textColor="@color/Numeros"
             android:id="@+id/btn4"
-            android:onClick="concatenar"
             >
 
         </Button>
@@ -167,7 +163,6 @@
             android:background="@color/Pad2"
             android:text="5"
             android:textSize="40dp"
-            android:onClick="concatenar"
             android:textColor="@color/Numeros"
             android:id="@+id/btn5"
             >
@@ -180,7 +175,6 @@
             android:text="6"
             android:textSize="40dp"
             android:textColor="@color/Numeros"
-            android:onClick="concatenar"
             android:id="@+id/btn6"
             >
         </Button>
@@ -192,8 +186,7 @@
             android:text="-"
             android:textSize="40dp"
             android:textColor="@color/Numeros"
-            android:id="@+id/btnRest"
-            android:onClick="restar">
+            android:id="@+id/btnRest">
         </Button>
     </LinearLayout>
     <LinearLayout
@@ -202,6 +195,7 @@
         android:background="@color/Fondo"
         android:layout_weight="1"
         android:orientation="horizontal">
+
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -210,9 +204,7 @@
             android:text="1"
             android:textSize="40dp"
             android:textColor="@color/Numeros"
-            android:id="@+id/btn1"
-            android:onClick="concatenar"
-            ></Button>
+            android:id="@+id/btn1" />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -222,7 +214,6 @@
             android:textSize="40dp"
             android:textColor="@color/Numeros"
             android:id="@+id/btn2"
-            android:onClick="concatenar"
             >
         </Button>
         <Button
@@ -234,7 +225,6 @@
             android:textSize="40dp"
             android:textColor="@color/Numeros"
             android:id="@+id/btn3"
-            android:onClick="concatenar"
             >
         </Button>
         <Button
@@ -246,7 +236,7 @@
             android:textSize="40dp"
             android:textColor="@color/Numeros"
             android:id="@+id/btnMore"
-            android:onClick="sumar">
+>
         </Button>
     </LinearLayout>
     <LinearLayout
@@ -265,8 +255,8 @@
             android:textSize="40dp"
             android:textColor="@color/Numeros"
             android:gravity="center"
-            android:onClick="concatenar"
-            android:id="@+id/btn0"></Button>
+
+            android:id="@+id/btn0" />
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -274,8 +264,9 @@
             android:background="@color/Pad2"
             android:text="."
             android:textSize="40dp"
+
             android:textColor="@color/Numeros"
-            android:onClick="concatenar"
+
             android:id="@+id/btnDot">
         </Button>
 
@@ -286,7 +277,7 @@
             android:background="@color/pad3"
             android:text="="
             android:textSize="40dp"
-            android:onClick="Igual"
+
             android:textColor="@color/Numeros"
 
             android:id="@+id/btnResult">
@@ -295,4 +286,4 @@
 </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
